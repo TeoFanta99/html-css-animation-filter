@@ -105,19 +105,28 @@
 .ex-9-img {
     margin: 50px 100px;
     width: 400px;
+    transition: 1s;
 }
 
 
-
+.ex-9-img:hover {
+    border-radius: 15px;
+    filter: contrast(50%);
+    filter: brightness(50%);
+    width: 600px;
+}
 
 /* --------------------------------------------------------------- */
 
 .ex-10-icon {
     font-size: 60px;
+    animation: giro 1.5s infinite linear;
 }
 
-
-
+@keyframes giro {
+    from {transform: rotate (0deg);}
+    to {transform: rotate(-359deg);}
+}
 
 
 
@@ -127,8 +136,21 @@
     font-size: 60px;
 }
 
+.ex-11-icon:hover {
+    animation: giro-due 1.5s linear
+}
 
-
+@keyframes giro-due {
+    0% {
+        transform: rotate(0);
+    }
+    75% {
+        transform: rotate(270deg);
+    }
+    100% {
+        transform: rotate(0);
+    }
+}
 
 
 
